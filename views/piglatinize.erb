@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pig Lantinized</title>
+  </head>
+  <body>
+    <h1>Pig Latinizer Results</h1>
+    <h2>Your Phrase: <%= @phrase %></h2>
+    <% phrase = PigLatinizer.new %>
+    <h2>Translation: <%= phrase.piglatinize(@phrase) %> </h2>
+
+  </body>
+</html>
